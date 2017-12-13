@@ -1,0 +1,43 @@
+
+{
+	"name": "vivre-tech/rest-data-renderer",
+	"description": "For Yii2: Just like Controller::Action but only for having multiple rendering templates in same place for data models.",
+	"keywords": ["yii2", "data-renderer", "renderer"],
+	"type": "yii2-extension",
+	"license": "MIT",
+	"support": {
+		"issues": "https://github.com/VivreTech/rest-data-renderer/issues",
+		"forum": "http://www.yiiframework.com/forum/",
+		"wiki": "https://github.com/VivreTech/rest-data-renderer/wiki",
+		"source": "https://github.com/VivreTech/rest-data-renderer"
+	},
+	"authors": [
+		{
+			"name": "Banciu N. Cristian Mihai",
+			"email": "banciu.n.cristian.mihai@gmail.com"
+		}
+	],
+	"require": {
+        "php": ">=5.4",
+		"yiisoft/yii2": "~2.0.13"
+	},
+    "require-dev": {
+        "phpunit/phpunit": "6.5.*"
+    },
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://asset-packagist.org"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+            "vivretech\\rest\\renderer\\": "src/"
+        }
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0.x-dev"
+		}
+	}
+}
