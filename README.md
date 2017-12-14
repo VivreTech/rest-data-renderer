@@ -3,9 +3,9 @@ This extension provides the ability to have multiple rendering templates in one 
 
 For license information check the [LICENSE](LICENSE.md)-file.
 
-[![Latest Stable Version](https://poser.pugx.org/vivre-tech/rest-data-renderer/v/stable.png)](https://packagist.org/packages/vivre-tech/rest-data-renderer)
-[![Total Downloads](https://poser.pugx.org/vivre-tech/rest-data-renderer/downloads.png)](https://packagist.org/packages/vivre-tech/rest-data-renderer)
-[![Build Status](https://travis-ci.org/vivre-tech/rest-data-renderer.svg?branch=master)](https://travis-ci.org/vivre-tech/rest-data-renderer)
+[![Latest Stable Version](https://poser.pugx.org/vivre-tech/rest-renderer/v/stable.png)](https://packagist.org/packages/vivre-tech/rest-renderer)
+[![Total Downloads](https://poser.pugx.org/vivre-tech/rest-renderer/downloads.png)](https://packagist.org/packages/vivre-tech/rest-renderer)
+[![Build Status](https://travis-ci.org/vivre-tech/rest-renderer.svg?branch=master)](https://travis-ci.org/vivre-tech/rest-renderer)
 
 
 Installation
@@ -16,20 +16,20 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist vivre-tech/rest-data-renderer
+php composer.phar require --prefer-dist vivre-tech/rest-renderer
 ```
 
 or add
 
 ```json
-"vivre-tech/rest-data-renderer": "*"
+"vivre-tech/rest-renderer": "*"
 ```
 
 to the require section of your composer.json.
 
 
 Usage
------
+------------
 
 Example:
 ```php
@@ -91,8 +91,26 @@ echo
 ```
 
 
+Response
+------------
+```json
+{
+    "productSummary": {
+        "name": "Product 1",
+        "price": 100
+    },
+    "productDetailed": {
+        "id": 1,
+        "name": "Product 1",
+        "price": 100,
+        "created_at": "2017-12-14 08:25:06"
+    }
+}
+```
+
+
 Unit Testing
-------
+------------
 If you run the following command: `composer install` in a dev environment then you will find `phpunit` in `/vendor/bin/phpunit`.
 
 In case `phpunit` in not installed via command `composer install`, just fallow next steps:
